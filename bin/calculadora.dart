@@ -6,6 +6,9 @@ void main() {
   //double.parse() converte uma String em um double
   double numeroUm = double.parse(stdin.readLineSync()!);
   double numeroDois = double.parse(stdin.readLineSync()!);
+  
+  //É para o usuário informar a operação que deseja realizar.
+  String operacao = stdin.readLineSync()!;
 
   void soma () {
     print(numeroUm + numeroDois);
@@ -23,5 +26,17 @@ void main() {
     print(numeroUm * numeroDois);
   }
 
-  multiplicacao();
+
+  //Condicionais para verificar qual operação o usuário deseja realizar.
+
+  if (operacao == "+"){
+    soma();
+  } else if (operacao == "-"){
+    subtracao();
+  } else if (operacao == "x" || operacao == "*"){
+    multiplicacao();
+  } else if (operacao == "/"){
+    divisao();
+  }
+
 }
