@@ -37,6 +37,7 @@ void main() {
     multiplicacao();
   } else if (operacao == "/"){
     divisao();
-  }
-
+  } else {
+    print ("Opcao invalida. Tente novamente.");
+  } return;
 }
