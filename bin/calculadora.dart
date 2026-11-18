@@ -50,6 +50,9 @@ void main() {
     if (entrada != null) {
       if (operacoes.contains(entrada)){
         operacao = entrada!;
+      } else {
+        print('Operação inválida');
+        getOperacao(); //Recursão -> Após o else a função é executada novamente
       }
     }
   }
