@@ -45,7 +45,7 @@ void main() {
   }
 
   void getOperacao() {
-    print("Escolha a operação matemática (+, -, *, /): ");
+    print("Escolha a operação matemática ${operacoes.toString()} \n");
     entrada = stdin.readLineSync();
     if (entrada != null) {
       if (operacoes.contains(entrada)){
